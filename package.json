@@ -1,7 +1,10 @@
 {
   "name": "barnacles-webhook",
   "homepage": "https://github.com/reelyactive/barnacles-webhook/",
-  "author": "reelyActive <info@reelyactive.com>",
+  "author": {
+    "name": "reelyActive",
+    "email": "info@reelyactive.com"
+  },
   "description": "Webhook interface for barnacles.  We believe in an open Internet of Things.",
   "keywords": [
     "reelyActive",
@@ -9,7 +12,7 @@
     "webhooks",
     "barnacles"
   ],
-  "version": "0.1.1",
+  "version": "1.0.0",
   "engines": {
     "node": ">=6.0.0"
   },
