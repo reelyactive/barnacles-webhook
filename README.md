@@ -33,13 +33,14 @@ Options
 
 __barnacles-webhook__ supports the following options:
 
-| Property    | Default     | Description                             | 
-|:------------|:------------|:----------------------------------------|
-| useHttps    | false       | POST via HTTPS (true) or HTTP (false)   |
-| hostname    | "localhost" | Hostname of the target server           |
-| port        | 80          | Port of the target server               |
-| path        | "/raddecs"  | Path on the target server               |
-| printErrors | false       | Print errors to the console (for debug) |
+| Property      | Default     | Description                                        | 
+|:--------------|:------------|:---------------------------------------------------|
+| useHttps      | false       | POST via HTTPS (true) or HTTP (false)              |
+| hostname      | "localhost" | Hostname of the target server                      |
+| port          | 80          | Port of the target server                          |
+| path          | "/raddecs"  | Path on the target server                          |
+| printErrors   | false       | Print errors to the console (for debug)            |
+| customHeaders | {}          | Dictionary of additional key/values for the header |
 
 By default __barnacles-webhook__ will POST to http://localhost/raddecs.
 
