@@ -1,7 +1,12 @@
 barnacles-webhook
 =================
 
-Webhook interface for [barnacles](https://github.com/reelyactive/barnacles/) open source software.  A webhook provides event notifications via HTTP POST.  We believe in an open Internet of Things.
+Webhook interface for [barnacles](https://github.com/reelyactive/barnacles/) and/or [chimps](https://github.com/reelyactive/chimps/) open source software packages.  A webhook provides event notifications via HTTP POST.
+
+__barnacles-webhook__ POSTs the following events as JSON:
+- raddec (RADio DECoding data)
+- dynamb (DYNamic AMBient data)
+- spatem (SPAtial-TEMporal data)
 
 
 Installation
@@ -38,7 +43,9 @@ __barnacles-webhook__ supports the following options:
 | useHttps      | false       | POST via HTTPS (true) or HTTP (false)          |
 | hostname      | "localhost" | Hostname of the target server                  |
 | port          | 80          | Port of the target server                      |
-| path          | "/raddecs"  | Path on the target server                      |
+| raddecPath    | "/raddecs"  | Path for raddec objects on the target server   |
+| dynambPath    | "/dynambs"  | Path for dynamb objects on the target server   |
+| spatemPath    | "/spatems"  | Path for spatem objects on the target server   |
 | printErrors   | false       | Print errors to the console (for debug)        |
 | customHeaders | {}          | Dictionary of additional key/values for the header |
 
